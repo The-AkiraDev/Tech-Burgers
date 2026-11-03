@@ -1,0 +1,244 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1c1c1c, #38302c);
+    color: #fff;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+/* CABEÇALHO */
+#titulo-e-subtitulo {
+    text-align: center;
+    font-family: Georgia, serif;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+#titulo-e-subtitulo h1 {
+    color: #ff9f1c;
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+#titulo-e-subtitulo h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#titulo-e-subtitulo hr {
+    border: 0;
+    height: 3px;
+    background: #ff5722;
+    width: 100px;
+    margin: 20px auto;
+}
+
+#titulo-e-subtitulo p {
+    color: #ccc;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+/* IMAGEM */
+.hamburguer1 {
+    display: block;
+    width: 150%;
+    max-width: 800px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 25px auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* CARDÁPIO */
+#cardapio {
+    background: #fff;
+    color: #333;
+    max-width: 700px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+#cardapio h3 {
+    color: #d84315;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#cardapio hr {
+    border: 0;
+    height: 2px;
+    background: #ff9f1c;
+    margin: 15px 0;
+}
+
+/* TABELA */
+.cardapio {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+.cardapio td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.cardapio td:first-child {
+    width: 65%;
+    font-weight: bold;
+    border-right: 2px solid #eee;
+}
+
+.cardapio td:last-child {
+    width: 35%;
+    text-align: center;
+}
+
+/* CAMPOS */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    min-width: 0;
+    padding: 11px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 5px rgba(255,87,34,0.3);
+}
+
+/* PAGAMENTO */
+#pagamento {
+    margin-top: 25px;
+    font-family: Georgia, serif;
+}
+
+#pagamento h3 {
+    color: #d84315;
+    margin-bottom: 15px;
+}
+
+/* BOTÃO */
+button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    background: linear-gradient(135deg, #ff5722, #e53935);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #e64a19, #c62828);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(229,57,53,0.4);
+}
+
+/* RESULTADO */
+#resultado {
+    max-width: 700px;
+    width: 100%;
+    margin: 25px auto 0;
+    padding: 25px;
+    background: #fff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    line-height: 2;
+}
+
+#resultado:empty {
+    display: none;
+}
+
+#resultado h3 {
+    color: #d84315;
+    margin-bottom: 15px;
+}
+
+#resultado p {
+    font-size: 16px;
+}
+
+#resultado h3:last-child {
+    text-align: center;
+    color: #e65100;
+    font-size: 22px;
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    #titulo-e-subtitulo h1 {
+        font-size: 30px;
+    }
+
+    #titulo-e-subtitulo h2 {
+        font-size: 17px;
+    }
+
+    #cardapio {
+        padding: 20px 12px;
+    }
+
+    .cardapio {
+        font-size: 14px;
+    }
+
+    .cardapio td {
+        padding: 12px 5px;
+    }
+
+    .cardapio td:first-child {
+        width: 65%;
+    }
+
+    .cardapio td:last-child {
+        width: 35%;
+    }
+
+    #resultado {
+        padding: 18px;
+    }
+
+    .hamburguer1 {
+        max-width: 100%;
+        height: 200px;
+    }
+}

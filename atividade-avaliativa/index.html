@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Burger</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="titulo-e-subtitulo">
+    <h1>🍔 TECH BURGER</h1>
+    <h2>O sabor que conquista a cada mordida!</h2>  
+    <hr>
+    <img src="burgerimg.jpg" alt="Tech Burger" class="hamburguer1">
+    <p> A Tech Burger é uma hambuergueria que envolve inovação, qualidade e muito sabor para proporcionar uma experiência única aos nossos clientes.
+        Nossa missão é transformar cada lanche em uma experi~encia incrível e única, combinando os melhores ingredientes artesanais.
+    </p>
+
+    </div>
+
+    <div id="cardapio">
+        <hr>
+        <h3>Cardápio</h3>
+        <table class="cardapio"> 
+
+        <tr>
+            <td>Nome:</td>
+            <td>
+                <input type="text" id="nome">
+            </td>
+        </tr>
+
+        <tr>
+            <td>X-Burger - R$ 18,00</td>
+            <td>
+                <input type="number" id="x-burger-quantidade" min="0" value="0">
+            </td>
+        </tr>
+
+        <tr>
+            <td>X-Bacon - R$ 24,00</td>
+            <td>
+                <input type="number" id="x-bacon-quantidade" min="0" value="0">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Sanduiche - R$ 15,00</td>
+            <td>
+                <input type="number" id="sanduiche-quantidade" min="0" value="0">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Refrigerante - R$ 7,00</td>
+            <td>
+                <input type="number" id="refrigerante-quantidade" min="0" value="0">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Suco - R$ 6,00</td>
+            <td>
+                <input type="number" id="suco-quantidade" min="0" value="0">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Pudim - R$ 8,00</td>
+            <td>
+                <input type="number" id="pudim-quantidade" min="0" value="0">
+            </td>
+
+        </tr>
+        </table>
+
+        <div id="pagamento">
+        <h3>Forma de pagamento</h3>
+
+        <select id="forma-pagamento">
+            <option value="">Selecione</option>
+            <option value="pix">Pix</option>
+            <option value="dinheiro">Dinheiro</option>
+            <option value="cartao">Cartão</option>
+        </select>
+
+        <button id="calcular" onclick="calcularTotal()">
+        Calcular Total
+        </button>
+        </div>
+
+        <div id="resultado"></div>
+    </div>
+
+    
+</body>
+
+</html>
